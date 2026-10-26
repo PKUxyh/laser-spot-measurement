@@ -1,0 +1,34 @@
+Focus Analysis Windows 便携版
+=============================
+
+运行方法
+--------
+1. 请先完整解压 ZIP 文件，不要直接在压缩包预览窗口中运行。
+2. 双击 FocusAnalysis.exe。
+3. Open files 可选择单张或多张 CSV/TIF/TIFF。
+4. Open folder 可进入文件夹，然后从列表中选择需要分析的文件。
+
+主要功能
+--------
+- 单图：焦斑椭圆、1/e² 与 FWHM 等高线、x/y cut、长短轴 cut。
+- 批量：a0-shot、wx/wy-shot、指向抖动和平均强度伪彩图。
+- 右侧显示 a0、光斑半径、x/y 位置抖动及 RMS pointing jitter 等结果。
+- 每幅图下方的工具栏支持缩放、平移、恢复视图和保存。
+
+输入说明
+--------
+- 支持带表头的 CSV，以及单帧、单通道 TIF/TIFF。
+- TIFF 像素值直接作为强度计数，不读取像素尺寸元数据。
+- 批量平均伪彩图要求所有成功分析的图像尺寸一致。
+- 请根据实际相机、成像倍率和激光参数设置 Pixel size、Pulse energy、
+  Duration、Wavelength 和 Integration radius。
+
+目录说明
+--------
+- FocusAnalysis.exe：主程序。
+- _internal：程序运行依赖；请勿删除、改名或单独移动 EXE。
+- source：完整 Python 源代码、测试和重新构建脚本。
+- verification.json：本次打包后 EXE 的单图和批量自检结果。
+- 重新构建方法请参见 source/README.md；运行便携版不需要安装 Python。
+
+本发布包未做代码签名，Windows 可能显示未知发布者提示。
