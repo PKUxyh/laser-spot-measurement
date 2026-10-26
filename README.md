@@ -6,6 +6,8 @@
 
 ### Windows 便携版
 
+[下载 FocusAnalysisPortable-win64.zip](https://github.com/PKUxyh/laser-spot-measurement/releases/latest/download/FocusAnalysisPortable-win64.zip)
+
 完整解压 `FocusAnalysisPortable-win64.zip`，双击 `FocusAnalysis.exe` 即可运行，
 无需安装 Python。请将 EXE 和 `_internal` 文件夹保存在一起。
 `source` 包含完整源码、测试和构建脚本；`verification.json` 是打包后 EXE 的自检结果。
